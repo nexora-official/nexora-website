@@ -3,74 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NEXORA - Future of Private AI</title>
+  <title>NEXORA - Private AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'DM Sans', Arial, sans-serif;
+      font-family: 'Space Grotesk', Arial, sans-serif;
       background-color: #0E1128;
-      color: #ffffff;
+      color: #FFFFFF;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
       text-align: center;
+      min-height: 100vh;
+      padding: 20px;
     }
     h1 {
       font-size: 3em;
-      margin-bottom: 0.5em;
+      margin-top: 80px;
     }
     p {
-      font-size: 1.3em;
-      margin-bottom: 1.5em;
-      max-width: 600px;
+      font-size: 1.2em;
+      margin: 20px 0;
+      max-width: 700px;
     }
-    a.button {
+    .button {
       display: inline-block;
+      margin-top: 20px;
       padding: 0.8em 1.5em;
       background-color: #00D1B2;
       color: #0E1128;
       text-decoration: none;
-      border-radius: 30px;
       font-weight: bold;
+      border-radius: 30px;
+      font-size: 1em;
       transition: background 0.3s;
     }
-    a.button:hover {
+    .button:hover {
       background-color: #00bfa5;
     }
+    section {
+      margin-top: 60px;
+      max-width: 800px;
+      width: 100%;
+    }
     footer {
-      position: absolute;
-      bottom: 20px;
+      margin-top: auto;
       font-size: 0.8em;
       opacity: 0.6;
+      padding: 20px 0;
+    }
+    input[type="email"] {
+      padding: 0.8em;
+      width: 70%;
+      margin-bottom: 1em;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+    }
+    button[type="submit"] {
+      padding: 0.8em 1.5em;
+      background-color: #00D1B2;
+      color: #0E1128;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+    button[type="submit"]:hover {
+      background-color: #00bfa5;
     }
   </style>
 </head>
 <body>
+
   <h1>NEXORA</h1>
-  <p>The future of privacy-first AI is coming.  
-  Empowering people, not exploiting them.</p>
-  <a href="#" class="button">Join Early Access</a>
-  <section style="margin-top: 4em; max-width: 500px; padding: 0 20px;">
-  <h2 style="font-size: 2em; margin-bottom: 0.5em;">Get Early Access</h2>
-  <form action="https://formspree.io/f/xzzrzyyp" method="POST">
-    <input type="email" name="email" required placeholder="Enter your email" style="padding: 0.8em; width: 80%; margin-bottom: 1em; border-radius: 30px; border: none;">
-    <br>
-    <button type="submit" style="padding: 0.8em 1.5em; background-color: #00D1B2; color: #0E1128; border: none; border-radius: 30px; font-weight: bold;">Notify Me</button>
-  </form>
-</section>
-<section style="margin-top: 4em; max-width: 800px; padding: 0 20px;">
-  <h2 style="font-size: 2em; margin-bottom: 0.5em;">Our Manifesto</h2>
-  <p style="font-size: 1.2em; line-height: 1.6;">
-    In a world of rapid digital transformation, technology must serve people – not exploit them.<br><br>
-    At NEXORA, we believe in building intelligent, secure, and human-centric tools.<br><br>
-    We protect privacy, empower freedom, and shape a future where you stay in control.<br><br>
-    <strong>NEXORA: Private by Design. Trusted by You.</strong>
-  </p>
-</section>
+  <p>Private AI. Powered by Trust.<br>Your future. Your control.</p>
+  <a href="#earlyaccess" class="button">Join Early Access</a>
+
+  <section>
+    <h2 style="color: #00D1B2;">Our Manifesto</h2>
+    <p>
+      In a world of rapid digital transformation, technology must serve people – not exploit them.<br><br>
+      At NEXORA, we build intelligent, secure, and human-centered tools.<br><br>
+      We protect privacy, empower freedom, and shape a future where you stay in control.<br><br>
+      <strong>Private by Design. Trusted by You.</strong>
+    </p>
+  </section>
+
+  <section id="earlyaccess">
+    <h2 style="color: #00D1B2;">Get Early Access</h2>
+    <form action="https://formspree.io/f/xzzrzyyp" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <br>
+      <button type="submit">Notify Me</button>
+    </form>
+  </section>
+
   <footer>
-    &copy; 2025 NEXORA | Privacy First, Always
+    &copy; 2025 NEXORA | Private AI. Powered by Trust.
   </footer>
+
 </body>
 </html>
